@@ -78,4 +78,6 @@ if __name__ == '__main__':
     print("valid nearest shape:", valid_nearest_mat.shape)
     with open('data/valid_nearest.dat', 'wb') as f:
         pickle.dump((valid_nearest, valid_nearest_mat), f)
+    with open('data/valid_nearest.pkl', 'wb') as f:
+        pickle.dump((valid_nearest, valid_nearest_mat), f)
     print("done pickling matrix")
